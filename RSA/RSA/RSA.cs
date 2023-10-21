@@ -1,16 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Numerics;
+﻿using System.Numerics;
 
-struct KhoaCongKhai
+struct PublicKey
 {
     public BigInteger n;
     public BigInteger e;
 }
-struct KhoaBiMat
+struct PrivateKey
 {
     public BigInteger n;
     public BigInteger d;
@@ -20,13 +15,13 @@ namespace RSA
 {
     class RSA
     {
-        public BigInteger MaHoaRSA(BigInteger P, KhoaCongKhai x)
+        public BigInteger Encryption(BigInteger P, PublicKey x)
         {
             BigInteger C;
             C = pow(P, x.e, x.n);
             return C;
         }
-        public BigInteger GiaiMaRSA(BigInteger C, KhoaBiMat y)
+        public BigInteger Decryption(BigInteger C, PrivateKey y)
         {
             BigInteger P;
             P = pow(C, y.d, y.n);

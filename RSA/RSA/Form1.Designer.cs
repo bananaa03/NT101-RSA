@@ -110,11 +110,11 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(87, 189);
+            label4.Location = new Point(102, 192);
             label4.Name = "label4";
-            label4.Size = new Size(54, 23);
+            label4.Size = new Size(42, 23);
             label4.TabIndex = 7;
-            label4.Text = "phi(n)";
+            label4.Text = "Ф(n)";
             // 
             // textBox4
             // 

@@ -1,20 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using System.Numerics;
+﻿using System.Numerics;
 namespace RSA
 {
     public partial class Form1 : Form
     {
         Random rnd = new Random();
-        KhoaCongKhai a = new KhoaCongKhai();
-        KhoaBiMat b = new KhoaBiMat();
+        PublicKey a = new PublicKey();
+        PrivateKey b = new PrivateKey();
         public Form1()
         {
             InitializeComponent();
@@ -81,7 +72,10 @@ namespace RSA
                 }
             }
             Flag = false;
-            MessageBox.Show("Số p: " + p + "\n" + "Số q: " + q);
+
+            textBox1.Text = p.ToString();
+            textBox2.Text = q.ToString();
+
             BigInteger phi_n, n;
             BigInteger rsa_e = 2;
             while (Flag == false)
@@ -95,8 +89,11 @@ namespace RSA
             }
             phi_n = (p - 1) * (q - 1);
             n = p * q;
+
+            textBox4.Text = phi_n.ToString();
+
             BigInteger d = modulo_inverse_euclidean(rsa_e, phi_n);
-            textBox3.Text = textBox3.Text = n.ToString();
+            textBox3.Text = n.ToString();
             textBox5.Text = rsa_e.ToString();
             textBox6.Text = d.ToString();
 
@@ -111,7 +108,7 @@ namespace RSA
         {
             RSA RSA = new RSA();
             BigInteger P = BigInteger.Parse(textBox7.Text.Trim());
-            BigInteger C = RSA.MaHoaRSA(P, a);
+            BigInteger C = RSA.Encryption(P, a);
             textBox8.Text = C.ToString();
         }
 
@@ -119,7 +116,7 @@ namespace RSA
         {
             RSA RSA = new RSA();
             BigInteger C = BigInteger.Parse(textBox7.Text.Trim());
-            BigInteger P = RSA.GiaiMaRSA(C, b);
+            BigInteger P = RSA.Decryption(C, b);
             textBox8.Text = P.ToString();
         }
     }
