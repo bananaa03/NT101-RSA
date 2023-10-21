@@ -58,13 +58,13 @@ namespace RSA
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            ChooseBigInteger rabin = new ChooseBigInteger();
+            ChooseBigInteger choose = new ChooseBigInteger();
             bool Flag = false;
             BigInteger p = 0, q = 0;
             while (Flag == false)
             {
                 BigInteger k = RANDBIG();
-                if (rabin.miller(k) == true)
+                if (choose.miller(k) == true)
                 {
                     p = k;
                     Flag = true;
@@ -74,7 +74,7 @@ namespace RSA
             while (Flag == false)
             {
                 BigInteger t = RANDBIG();
-                if (rabin.miller(t) == true)
+                if (choose.miller(t) == true)
                 {
                     q = t;
                     Flag = true;
@@ -87,7 +87,7 @@ namespace RSA
             while (Flag == false)
             {
                 BigInteger t = rnd.Next(2, 999999);
-                if (rabin.miller(t) == true)
+                if (choose.miller(t) == true)
                 {
                     rsa_e = t;
                     Flag = true;
