@@ -108,7 +108,16 @@ namespace RSA
         private void button2_Click(object sender, EventArgs e)
         {
             RSA RSA = new RSA();
-            BigInteger P = BigInteger.Parse(textBox7.Text.Trim());
+            String b = textBox7.Text.Trim();
+            b.ToLower();
+            String d = "";
+            int f;
+            foreach (char c in b)
+            {
+                f = (int)c;
+                d = d + f;
+            }
+            BigInteger P = BigInteger.Parse(d);
             BigInteger C = RSA.Encryption(P, a);
             textBox8.Text = C.ToString();
         }
@@ -119,16 +128,6 @@ namespace RSA
             BigInteger C = BigInteger.Parse(textBox7.Text.Trim());
             BigInteger P = RSA.Decryption(C, b);
             textBox8.Text = P.ToString();
-        }
-
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
-        {
-            RadioButton radio1 = sender as RadioButton;
-        }
-
-        private void radioButton1_CheckedChanged_1(object sender, EventArgs e)
-        {
-
         }
     }
 }
