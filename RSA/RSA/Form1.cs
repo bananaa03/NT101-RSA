@@ -1,4 +1,5 @@
-﻿using System.Numerics;
+﻿using Microsoft.VisualBasic.Devices;
+using System.Numerics;
 namespace RSA
 {
     public partial class Form1 : Form
@@ -118,6 +119,16 @@ namespace RSA
             BigInteger C = BigInteger.Parse(textBox7.Text.Trim());
             BigInteger P = RSA.Decryption(C, b);
             textBox8.Text = P.ToString();
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            RadioButton radio1 = sender as RadioButton;
+        }
+
+        private void radioButton1_CheckedChanged_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

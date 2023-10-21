@@ -47,6 +47,11 @@
             label8 = new Label();
             button2 = new Button();
             button3 = new Button();
+            label9 = new Label();
+            groupBox1 = new GroupBox();
+            radioButton2 = new RadioButton();
+            radioButton1 = new RadioButton();
+            groupBox1.SuspendLayout();
             SuspendLayout();
             // 
             // button1
@@ -95,6 +100,7 @@
             // 
             textBox3.Location = new Point(150, 135);
             textBox3.Name = "textBox3";
+            textBox3.ReadOnly = true;
             textBox3.Size = new Size(526, 30);
             textBox3.TabIndex = 5;
             // 
@@ -120,6 +126,7 @@
             // 
             textBox4.Location = new Point(150, 189);
             textBox4.Name = "textBox4";
+            textBox4.ReadOnly = true;
             textBox4.Size = new Size(526, 30);
             textBox4.TabIndex = 8;
             // 
@@ -127,6 +134,7 @@
             // 
             textBox5.Location = new Point(150, 248);
             textBox5.Name = "textBox5";
+            textBox5.ReadOnly = true;
             textBox5.Size = new Size(526, 30);
             textBox5.TabIndex = 9;
             // 
@@ -152,12 +160,13 @@
             // 
             textBox6.Location = new Point(150, 312);
             textBox6.Name = "textBox6";
+            textBox6.ReadOnly = true;
             textBox6.Size = new Size(526, 30);
             textBox6.TabIndex = 12;
             // 
             // textBox7
             // 
-            textBox7.Location = new Point(150, 413);
+            textBox7.Location = new Point(150, 432);
             textBox7.Name = "textBox7";
             textBox7.Size = new Size(744, 30);
             textBox7.TabIndex = 13;
@@ -166,13 +175,14 @@
             // 
             textBox8.Location = new Point(150, 491);
             textBox8.Name = "textBox8";
+            textBox8.ReadOnly = true;
             textBox8.Size = new Size(744, 30);
             textBox8.TabIndex = 14;
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(56, 416);
+            label7.Location = new Point(56, 435);
             label7.Name = "label7";
             label7.Size = new Size(85, 23);
             label7.TabIndex = 15;
@@ -207,11 +217,55 @@
             button3.UseVisualStyleBackColor = true;
             button3.Click += button3_Click;
             // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Location = new Point(229, 378);
+            label9.Name = "label9";
+            label9.Size = new Size(76, 23);
+            label9.TabIndex = 19;
+            label9.Text = "Input as:";
+            // 
+            // groupBox1
+            // 
+            groupBox1.Controls.Add(radioButton2);
+            groupBox1.Controls.Add(radioButton1);
+            groupBox1.Location = new Point(311, 348);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(231, 58);
+            groupBox1.TabIndex = 20;
+            groupBox1.TabStop = false;
+            // 
+            // radioButton2
+            // 
+            radioButton2.AutoSize = true;
+            radioButton2.Location = new Point(131, 25);
+            radioButton2.Name = "radioButton2";
+            radioButton2.Size = new Size(91, 27);
+            radioButton2.TabIndex = 1;
+            radioButton2.TabStop = true;
+            radioButton2.Text = "number";
+            radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // radioButton1
+            // 
+            radioButton1.AutoSize = true;
+            radioButton1.Location = new Point(6, 25);
+            radioButton1.Name = "radioButton1";
+            radioButton1.Size = new Size(60, 27);
+            radioButton1.TabIndex = 0;
+            radioButton1.TabStop = true;
+            radioButton1.Text = "text";
+            radioButton1.UseVisualStyleBackColor = true;
+            radioButton1.CheckedChanged += radioButton1_CheckedChanged_1;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(9F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1017, 622);
+            Controls.Add(groupBox1);
+            Controls.Add(label9);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(label8);
@@ -234,6 +288,8 @@
             Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
             Name = "Form1";
             Text = "RSA - TH1.08";
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -259,5 +315,9 @@
         private Label label8;
         private Button button2;
         private Button button3;
+        private Label label9;
+        private GroupBox groupBox1;
+        private RadioButton radioButton2;
+        private RadioButton radioButton1;
     }
 }

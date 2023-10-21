@@ -27,6 +27,22 @@ namespace RSA
             P = pow(C, y.d, y.n);
             return P;
         }
+
+        /*public BigInteger EncryptionText(string T, PublicKey x) 
+        {
+            BigInteger P = BigInteger.Parse(T);
+            BigInteger C;
+            C = pow(P, x.e, x.n);
+            return C;
+        }
+        public BigInteger DecryptionText(string T, PrivateKey y) 
+        {
+            BigInteger C = BigInteger.Parse(T);
+            BigInteger P;
+            P = pow(C, y.d, y.n);
+            return P;
+        }*/
+
         public BigInteger pow(BigInteger a, BigInteger d, BigInteger n)
         {
             BigInteger result = 1;
