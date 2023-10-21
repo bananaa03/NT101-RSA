@@ -1,0 +1,17 @@
+E:\Study\Nam 3 HK1\Môn AN TOÀN MẠNG MÁY TÍNH\THỰC HÀNH\LAB 2\NT101-RSA\RSA\RSA\bin\Debug\net6.0-windows\RSA.exe
+E:\Study\Nam 3 HK1\Môn AN TOÀN MẠNG MÁY TÍNH\THỰC HÀNH\LAB 2\NT101-RSA\RSA\RSA\bin\Debug\net6.0-windows\RSA.deps.json
+E:\Study\Nam 3 HK1\Môn AN TOÀN MẠNG MÁY TÍNH\THỰC HÀNH\LAB 2\NT101-RSA\RSA\RSA\bin\Debug\net6.0-windows\RSA.runtimeconfig.json
+E:\Study\Nam 3 HK1\Môn AN TOÀN MẠNG MÁY TÍNH\THỰC HÀNH\LAB 2\NT101-RSA\RSA\RSA\bin\Debug\net6.0-windows\RSA.dll
+E:\Study\Nam 3 HK1\Môn AN TOÀN MẠNG MÁY TÍNH\THỰC HÀNH\LAB 2\NT101-RSA\RSA\RSA\bin\Debug\net6.0-windows\RSA.pdb
+E:\Study\Nam 3 HK1\Môn AN TOÀN MẠNG MÁY TÍNH\THỰC HÀNH\LAB 2\NT101-RSA\RSA\RSA\obj\Debug\net6.0-windows\RSA.csproj.AssemblyReference.cache
+E:\Study\Nam 3 HK1\Môn AN TOÀN MẠNG MÁY TÍNH\THỰC HÀNH\LAB 2\NT101-RSA\RSA\RSA\obj\Debug\net6.0-windows\RSA.Form1.resources
+E:\Study\Nam 3 HK1\Môn AN TOÀN MẠNG MÁY TÍNH\THỰC HÀNH\LAB 2\NT101-RSA\RSA\RSA\obj\Debug\net6.0-windows\RSA.csproj.GenerateResource.cache
+E:\Study\Nam 3 HK1\Môn AN TOÀN MẠNG MÁY TÍNH\THỰC HÀNH\LAB 2\NT101-RSA\RSA\RSA\obj\Debug\net6.0-windows\RSA.GeneratedMSBuildEditorConfig.editorconfig
+E:\Study\Nam 3 HK1\Môn AN TOÀN MẠNG MÁY TÍNH\THỰC HÀNH\LAB 2\NT101-RSA\RSA\RSA\obj\Debug\net6.0-windows\RSA.AssemblyInfoInputs.cache
+E:\Study\Nam 3 HK1\Môn AN TOÀN MẠNG MÁY TÍNH\THỰC HÀNH\LAB 2\NT101-RSA\RSA\RSA\obj\Debug\net6.0-windows\RSA.AssemblyInfo.cs
+E:\Study\Nam 3 HK1\Môn AN TOÀN MẠNG MÁY TÍNH\THỰC HÀNH\LAB 2\NT101-RSA\RSA\RSA\obj\Debug\net6.0-windows\RSA.csproj.CoreCompileInputs.cache
+E:\Study\Nam 3 HK1\Môn AN TOÀN MẠNG MÁY TÍNH\THỰC HÀNH\LAB 2\NT101-RSA\RSA\RSA\obj\Debug\net6.0-windows\RSA.dll
+E:\Study\Nam 3 HK1\Môn AN TOÀN MẠNG MÁY TÍNH\THỰC HÀNH\LAB 2\NT101-RSA\RSA\RSA\obj\Debug\net6.0-windows\refint\RSA.dll
+E:\Study\Nam 3 HK1\Môn AN TOÀN MẠNG MÁY TÍNH\THỰC HÀNH\LAB 2\NT101-RSA\RSA\RSA\obj\Debug\net6.0-windows\RSA.pdb
+E:\Study\Nam 3 HK1\Môn AN TOÀN MẠNG MÁY TÍNH\THỰC HÀNH\LAB 2\NT101-RSA\RSA\RSA\obj\Debug\net6.0-windows\RSA.genruntimeconfig.cache
+E:\Study\Nam 3 HK1\Môn AN TOÀN MẠNG MÁY TÍNH\THỰC HÀNH\LAB 2\NT101-RSA\RSA\RSA\obj\Debug\net6.0-windows\ref\RSA.dll
